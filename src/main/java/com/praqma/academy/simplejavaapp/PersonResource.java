@@ -28,13 +28,6 @@ public class PersonResource {
     }
     
     @GET
-    @Path("put/{isbn}")
-    public void addPerson(@PathParam("isbn") String id){
-        database.addPerson(new Person(id));
-    }
-    
-    
-    @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Person get(@PathParam("id") int id) {

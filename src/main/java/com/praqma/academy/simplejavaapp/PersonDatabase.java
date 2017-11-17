@@ -22,11 +22,7 @@ public class PersonDatabase {
             new Person("Penny"), 
             new Person("Leonard"), 
             new Person("Sheldon"), 
-            new Person("Amy"), 
-            new Person("Howard"), 
-            new Person("Bernadette"), 
-            new Person("Raj"), 
-            new Person("Priya")};
+            new Person("Amy")};
         persons = new ArrayList<>(Arrays.asList(list));
     }
 
