@@ -18,14 +18,15 @@ public class PersonDatabase {
     @PostConstruct
     public void init() {
         System.out.println("DB init");
-        Person[] list= new Person[]{new Person("Penny"), 
-                new Person("Leonard"), 
-                new Person("Sheldon"), 
-                new Person("Amy"), 
-                new Person("Howard"), 
-                new Person("Bernadette"), 
-                new Person("Raj"), 
-                new Person("Priya")};
+        Person[] list= new Person[]{
+            new Person("Penny"), 
+            new Person("Leonard"), 
+            new Person("Sheldon"), 
+            new Person("Amy"), 
+            new Person("Howard"), 
+            new Person("Bernadette"), 
+            new Person("Raj"), 
+            new Person("Priya")};
         persons = new ArrayList<>(Arrays.asList(list));
     }
 

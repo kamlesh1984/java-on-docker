@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="demo">
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="js/root.js"></script>
     </head>
     <body>
         <h1>Hello World!</h1>
+        <div ng-controller="Hello">
+<table>
+    <thead>
+    <th>Names</th>
+    </thead>
+  <tr ng-repeat="x in names">
+    <td>{{ x.name }}</td>
+  </tr>
+</table>
+            <button ng-click="refresh()">Refresh</button>
+		</div>
+        
+<div ng-controller="formCtrl">
+  <form novalidate>
+    First Name:<br>
+    <input type="text" ng-model="user.name"><br>
+    <br><br>
+    <button ng-click="insert()">Insert name</button>
+  </form>
+  <p>form = {{user}}</p>
+</div>
     </body>
 </html>
