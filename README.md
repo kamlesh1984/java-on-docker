@@ -6,7 +6,7 @@ Small Java application utillizing multi-stage build
 * Run: `docker container run -it -p 8080:8080 people:singlestage`
 * Access: `curl http://localhost:8080/people/resources/persons`
 
-== Multi-stage
+## Multi-stage
 
 * Build: `docker image build -f Dockerfile -t people:multistage .`
 * Run: `docker container run -it -p 8080:8080 people:multistage`
